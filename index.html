@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nf Construction LLC | Commercial Construction & Concrete Foundations</title>
+    <meta name="description"
+        content="Nf Construction LLC specializes in premium concrete foundations, framing, and commercial construction services. Building strong foundations for the future.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="header-pill">
+            <nav class="nav nav-left">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">SERVICES</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="logo">
+                <img src="assets/images/Contruction logo black.png" alt="Nf Construction LLC" class="logo-img">
+            </a>
+
+            <nav class="nav nav-right">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#projects" class="nav-link">PROJECTS</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">TESTIMONIALS</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+            <a href="#" class="logo">
+                <img src="assets/images/Contruction logo black.png" alt="Nf Construction LLC" class="logo-img">
+            </a>
+            <button class="sidebar-close" id="sidebar-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="tel:+1234567890" class="sidebar-contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+1 234 567 890</span>
+            </a>
+            <div class="sidebar-socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="assets/images/construction video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Premium Contracting Services</div>
+                <h1 class="hero-title">Building Strong Foundations For The Future</h1>
+                <p class="hero-subtitle">We deliver excellence in concrete foundations, framing, and commercial
+                    construction. Engineered for durability, built for generations.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large"><span class="btn-icon"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor">
+                                <path
+                                    d="M11.7478 0.251049C12.0825 0.58578 12.0825 1.1285 11.7478 1.46323L2.03354 11.1775C1.69881 11.5122 1.15609 11.5122 0.821361 11.1775C0.486629 10.8427 0.486629 10.3001 0.821361 9.96537L10.5357 0.251049C10.8704 -0.083683 11.413 -0.083683 11.7478 0.251049Z" />
+                                <path
+                                    d="M0 0.857143C0 0.38376 0.38376 0 0.857143 0H11.1429C11.6162 0 12 0.38376 12 0.857143V11.1429C12 11.6162 11.6162 12 11.1429 12C10.6695 12 10.2857 11.6162 10.2857 11.1429V1.71429H0.857143C0.38376 1.71429 0 1.33053 0 0.857143Z" />
+                            </svg></span><span class="btn-text">Request Free Estimate</span><span
+                            class="btn-hover-bg"></span></a>
+                    <a href="#projects" class="btn btn-outline-light btn-large"><span class="btn-icon"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor">
+                                <path
+                                    d="M11.7478 0.251049C12.0825 0.58578 12.0825 1.1285 11.7478 1.46323L2.03354 11.1775C1.69881 11.5122 1.15609 11.5122 0.821361 11.1775C0.486629 10.8427 0.486629 10.3001 0.821361 9.96537L10.5357 0.251049C10.8704 -0.083683 11.413 -0.083683 11.7478 0.251049Z" />
+                                <path
+                                    d="M0 0.857143C0 0.38376 0.38376 0 0.857143 0H11.1429C11.6162 0 12 0.38376 12 0.857143V11.1429C12 11.6162 11.6162 12 11.1429 12C10.6695 12 10.2857 11.6162 10.2857 11.1429V1.71429H0.857143C0.38376 1.71429 0 1.33053 0 0.857143Z" />
+                            </svg></span><span class="btn-text">View Projects</span><span
+                            class="btn-hover-bg"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-image-wrapper reveal-left">
+                <img src="assets/images/new group image.png" alt="Nf Construction Team" class="about-img">
+                <div class="experience-badge">
+                    <span class="exp-number">10</span>
+                    <span class="exp-text">Years of<br>Excellence</span>
+                </div>
+            </div>
+            <div class="about-content reveal-right">
+                <span class="section-subtitle">About Our Company</span>
+                <h2 class="section-title">Setting The Standard In Commercial Construction</h2>
+                <p class="about-desc">At Nf Construction LLC, we don't just build structures; we build trust. With over
+                    a decade of experience, our team specializes in high-quality concrete foundations, structural
+                    framing, and comprehensive commercial construction services.</p>
+
+                <div class="mission-box">
+                    <i class="fas fa-bullseye mission-icon"></i>
+                    <div>
+                        <h3 class="mission-title">Our Mission</h3>
+                        <p class="mission-text">To deliver superior construction services through dedication to safety,
+                            quality craftsmanship, and unmatched professionalism.</p>
+                    </div>
+                </div>
+
+                <div class="about-features">
+                    <div class="feature"><i class="fas fa-check-circle"></i> Licensed & Insured</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> Expert Engineering</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> On-time Delivery</div>
+                    <div class="feature"><i class="fas fa-check-circle"></i> Premium Materials</div>
+                </div>
+
+                <a href="#services" class="btn btn-primary"><span class="btn-icon"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor">
+                            <path
+                                d="M11.7478 0.251049C12.0825 0.58578 12.0825 1.1285 11.7478 1.46323L2.03354 11.1775C1.69881 11.5122 1.15609 11.5122 0.821361 11.1775C0.486629 10.8427 0.486629 10.3001 0.821361 9.96537L10.5357 0.251049C10.8704 -0.083683 11.413 -0.083683 11.7478 0.251049Z" />
+                            <path
+                                d="M0 0.857143C0 0.38376 0.38376 0 0.857143 0H11.1429C11.6162 0 12 0.38376 12 0.857143V11.1429C12 11.6162 11.6162 12 11.1429 12C10.6695 12 10.2857 11.6162 10.2857 11.1429V1.71429H0.857143C0.38376 1.71429 0 1.33053 0 0.857143Z" />
+                        </svg></span><span class="btn-text">Discover Our Services</span><span
+                        class="btn-hover-bg"></span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stats Section -->
+    <section class="impact-stats">
+        <div class="container">
+            <div class="stats-grid reveal-up">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-text">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-text">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-text">Quality Guaranteed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-text">Safety First</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="services-section-row text-center reveal-up">
+                <span class="services-subtitle"><i class="fa-solid fa-cubes"></i> SERVICES</span>
+                <h2 class="services-heading">Comprehensive Construction Services</h2>
+                <p class="services-desc">We offer end-to-end construction solutions designed to meet the rigorous
+                    demands of commercial developers and contractors.</p>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="services-tab-nav reveal-up">
+                <ul class="nav nav-tabs" id="serviceTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="concrete-tab" data-bs-toggle="tab"
+                            data-bs-target="#concrete" type="button" role="tab" aria-selected="true">
+                            <i class="fa-solid fa-cubes"></i> Concrete Foundations
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="framing-tab" data-bs-toggle="tab" data-bs-target="#framing"
+                            type="button" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-ruler-combined"></i> Framing Services
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="commercial-tab" data-bs-toggle="tab" data-bs-target="#commercial"
+                            type="button" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-building"></i> Commercial Construction
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="site-tab" data-bs-toggle="tab" data-bs-target="#site" type="button"
+                            role="tab" aria-selected="false">
+                            <i class="fa-solid fa-tractor"></i> Site Preparation
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="serviceTabContent">
+                <!-- Concrete Foundations -->
+                <div class="tab-pane show active" id="concrete" role="tabpanel" aria-labelledby="concrete-tab">
+                    <div class="service-tab-row">
+                        <div class="service-tab-text">
+                            <p>At Nf Construction LLC, we specialize in delivering high-performance concrete foundations
+                                for commercial and industrial developments. Our expert engineering ensures every
+                                structure sits on a base of unmatched strength and durability.</p>
+                            <div class="service-tab-divider"></div>
+                            <ul class="service-tab-list">
+                                <li><i class="fas fa-check"></i> Advanced Industrial Foundation Engineering</li>
+                                <li><i class="fas fa-check"></i> High-Grade Reinforcement Materials</li>
+                                <li><i class="fas fa-check"></i> Precision Pouring and Quality Control</li>
+                            </ul>
+                        </div>
+                        <div class="service-tab-img">
+                            <div class="service-img-frame">
+                                <img src="assets/images/concrete foundations.avif" alt="Concrete Foundation">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Framing Services -->
+                <div class="tab-pane" id="framing" role="tabpanel" aria-labelledby="framing-tab">
+                    <div class="service-tab-row">
+                        <div class="service-tab-text">
+                            <p>Our framing services provide the essential structural integrity for large-scale
+                                buildings. We use precision-engineered steel and wood systems to create the robust
+                                skeleton of your commercial project.</p>
+                            <div class="service-tab-divider"></div>
+                            <ul class="service-tab-list">
+                                <li><i class="fas fa-check"></i> Expert Steel and Wood Structural Framing</li>
+                                <li><i class="fas fa-check"></i> Accurate Blueprint Interpretation</li>
+                                <li><i class="fas fa-check"></i> Rapid and Safe Structural Assembly</li>
+                            </ul>
+                        </div>
+                        <div class="service-tab-img">
+                            <div class="service-img-frame">
+                                <img src="assets/images/farming.jpg" alt="Framing Services">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commercial Construction -->
+                <div class="tab-pane" id="commercial" role="tabpanel" aria-labelledby="commercial-tab">
+                    <div class="service-tab-row">
+                        <div class="service-tab-text">
+                            <p>We manage full-scale commercial construction projects from ground-breaking to final
+                                delivery. Our team ensures every detail meets modern architectural standards and
+                                client requirements.</p>
+                            <div class="service-tab-divider"></div>
+                            <ul class="service-tab-list">
+                                <li><i class="fas fa-check"></i> Comprehensive End-to-End Build Solutions</li>
+                                <li><i class="fas fa-check"></i> On-Time Project Delivery and Management</li>
+                                <li><i class="fas fa-check"></i> Superior Craftsmanship and Finish</li>
+                            </ul>
+                        </div>
+                        <div class="service-tab-img">
+                            <div class="service-img-frame">
+                                <img src="assets/images/commercial construction.jpg" alt="Commercial Construction">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Site Preparation -->
+                <div class="tab-pane" id="site" role="tabpanel" aria-labelledby="site-tab">
+                    <div class="service-tab-row">
+                        <div class="service-tab-text">
+                            <p>Expert site preparation is the first step toward a successful build. We handle everything
+                                from land clearing and excavation to precise grading and drainage planning.</p>
+                            <div class="service-tab-divider"></div>
+                            <ul class="service-tab-list">
+                                <li><i class="fas fa-check"></i> Professional Land Clearing and Excavation</li>
+                                <li><i class="fas fa-check"></i> Precision Grading for Optimal Drainage</li>
+                                <li><i class="fas fa-check"></i> Advanced Site Planning and Safety</li>
+                            </ul>
+                        </div>
+                        <div class="service-tab-img">
+                            <div class="service-img-frame">
+                                <img src="assets/images/site preparation.jpg" alt="Site Preparation">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- View All Services Button -->
+                <div class="service-all-btn text-center reveal-up">
+                    <a href="#contact" class="btn btn-primary">
+                        <span class="btn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                fill="currentColor">
+                                <path
+                                    d="M11.7478 0.251049C12.0825 0.58578 12.0825 1.1285 11.7478 1.46323L2.03354 11.1775C1.69881 11.5122 1.15609 11.5122 0.821361 11.1775C0.486629 10.8427 0.486629 10.3001 0.821361 9.96537L10.5357 0.251049C10.8704 -0.083683 11.413 -0.083683 11.7478 0.251049Z">
+                                </path>
+                                <path
+                                    d="M0 0.857143C0 0.38376 0.38376 0 0.857143 0H11.1429C11.6162 0 12 0.38376 12 0.857143V11.1429C12 11.6162 11.6162 12 11.1429 12C10.6695 12 10.2857 11.6162 10.2857 11.1429V1.71429H0.857143C0.38376 1.71429 0 1.33053 0 0.857143Z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="btn-text">View All Services</span>
+                        <span class="btn-hover-bg"></span>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <!-- <section class="why-us" id="why-us">
+        <div class="container why-us-container">
+            <div class="why-us-content reveal-left">
+                <span class="section-subtitle">Why Choose Us</span>
+                <h2 class="section-title text-white">Building Trust Through Industrial Excellence</h2>
+                <p class="why-us-desc">We understand that in commercial construction, time is money and quality is non-negotiable. Here is why industry leaders choose Nf Construction LLC.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-users-gear"></i></div>
+                        <div>
+                            <h4>Experienced Team</h4>
+                            <p>Veteran engineers and builders.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div>
+                            <h4>Licensed & Insured</h4>
+                            <p>Fully compliant and protected.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-hard-hat"></i></div>
+                        <div>
+                            <h4>Safety First</h4>
+                            <p>Strict OSHA safety standards.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                        <div>
+                            <h4>High Quality Materials</h4>
+                            <p>Only industry-grade supplies.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>On-Time Delivery</h4>
+                            <p>Strict adherence to schedules.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-tools"></i></div>
+                        <div>
+                            <h4>Pro Equipment</h4>
+                            <p>State-of-the-art machinery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-us-image reveal-right">
+                <img src="assets/images/project_concrete.png" alt="Concrete Pouring">
+                <div class="overlay-box">
+                    <h3>Uncompromising Quality</h3>
+                    <p>Every pour, every beam, perfection.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+    <section class="rf-projects-section" id="projects">
+        <div class="rf-container">
+
+            <!-- Header -->
+            <div class="rf-projects-header reveal-up">
+                <div class="rf-subtitle-wrap">
+                    <span class="rf-star">✦</span>
+                    <span class="rf-subtitle">OUR PROJECTS</span>
+                </div>
+                <h2 class="rf-title">Showcasing construction that reflects quality and craftsmanship</h2>
+            </div>
+
+            <!-- Slider -->
+            <div class="swiper rf-projects-slider">
+                <div class="swiper-wrapper">
+
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
+                        <div class="rf-project-card">
+                            <div class="rf-project-image">
+                                <img src="assets/images/project_concrete.png" alt="Concrete Foundation">
+                            </div>
+                            <div class="rf-project-overlay"></div>
+                            <div class="rf-project-content">
+                                <h3>Apex Commercial Center Foundation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
+                        <div class="rf-project-card">
+                            <div class="rf-project-image">
+                                <img src="assets/images/hero_bg.png" alt="Structural Framing">
+                            </div>
+                            <div class="rf-project-overlay"></div>
+                            <div class="rf-project-content">
+                                <h3>Horizon Office Park Structural Frame</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
+                        <div class="rf-project-card">
+                            <div class="rf-project-image">
+                                <img src="assets/images/new group image.png" alt="Commercial Building">
+                            </div>
+                            <div class="rf-project-overlay"></div>
+                            <div class="rf-project-content">
+                                <h3>Nexus Tech Hub Commercial Build</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide">
+                        <div class="rf-project-card">
+                            <div class="rf-project-image">
+                                <img src="https://demo.awaikenthemes.com/renofix/wp-content/uploads/2025/12/project-1.jpg"
+                                    alt="Full Scale Build">
+                            </div>
+                            <div class="rf-project-overlay"></div>
+                            <div class="rf-project-content">
+                                <h3>Full-Scale Modern Commercial Transformation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="swiper-slide">
+                        <div class="rf-project-card">
+                            <div class="rf-project-image">
+                                <img src="https://demo.awaikenthemes.com/renofix/wp-content/uploads/2025/12/project-6.jpg"
+                                    alt="Industrial Site">
+                            </div>
+                            <div class="rf-project-overlay"></div>
+                            <div class="rf-project-content">
+                                <h3>Industrial Site Preparation and Concrete Work</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- CTA -->
+            <div class="rf-bottom-cta">
+                <div class="rf-author">
+                    <img src="https://demo.awaikenthemes.com/renofix/wp-content/uploads/2025/12/author-1.jpg"
+                        alt="Team Member">
+                    <div class="rf-phone-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M18.9657 14.8671C18.4744 14.3555 17.8818 14.082 17.2537 14.082C16.6306 14.082 16.0329 14.3505 15.5213 14.8621L13.9206 16.4576C13.7889 16.3867 13.6572 16.3209 13.5306 16.255C13.3483 16.1639 13.176 16.0777 13.0291 15.9866C11.5298 15.0343 10.1672 13.7933 8.86033 12.1875C8.22716 11.3872 7.80167 10.7135 7.49268 10.0297C7.90804 9.64979 8.29301 9.25469 8.66785 8.87479C8.80968 8.73296 8.95151 8.58607 9.09334 8.44424C10.1571 7.38051 10.1571 6.00273 9.09334 4.939L7.71049 3.55616C7.55347 3.39913 7.39138 3.23704 7.23941 3.07495C6.93549 2.7609 6.61637 2.43671 6.28713 2.13279C5.79579 1.64652 5.2082 1.38818 4.59023 1.38818C3.97226 1.38818 3.37454 1.64652 2.86801 2.13279L1.13565 3.88034C0.487286 4.52871 0.117514 5.31891 0.0364682 6.23574C-0.0851005 7.71482 0.350521 9.0926 0.684835 9.99424C1.50542 12.2078 2.73124 14.2593 4.55984 16.4576C6.77847 19.1068 9.44791 21.1988 12.4973 22.6728C13.6623 23.225 15.2174 23.8784 16.9548 23.9898Z" />
+                        </svg>
+                    </div>
+                </div>
+                <p>Let's make something great work together. <a href="#contact">Get Free Quote</a></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header reveal-up" style="text-align: center;">
+                <span class="section-subtitle"><span class="process-dot"></span> OUR WORKING PROCESS</span>
+                <h2 class="section-title">Step-by-step process turning visions into lasting structures</h2>
+            </div>
+
+            <div class="process-steps">
+                <!-- Step 1 -->
+                <div class="process-step step-down reveal-up">
+                    <div class="step-number">1</div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-comments"></i></div>
+                        <h3 class="step-title">Consultation</h3>
+                        <p class="step-desc">We discuss your vision, requirements, and budget to establish a clear
+                            project scope.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="process-step step-up reveal-up" style="transition-delay: 0.1s;">
+                    <div class="step-number">2</div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-clipboard-list"></i></div>
+                        <h3 class="step-title">Planning</h3>
+                        <p class="step-desc">Detailed blueprints, permits, and schedules are secured to ensure smooth
+                            execution.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="process-step step-down reveal-up" style="transition-delay: 0.2s;">
+                    <div class="step-number">3</div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-hard-hat"></i></div>
+                        <h3 class="step-title">Construction</h3>
+                        <p class="step-desc">Our expert teams execute the build with precision, safety, and rigorous
+                            quality control.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="process-step step-up reveal-up" style="transition-delay: 0.3s;">
+                    <div class="step-number">4</div>
+                    <div class="step-card">
+                        <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3 class="step-title">Final Delivery</h3>
+                        <p class="step-desc">A thorough inspection and walkthrough ensure everything meets our premium
+                            standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-subtitle">Client Reviews</span>
+                <h2 class="section-title">What Our Partners Say</h2>
+            </div>
+
+            <div class="testimonials-carousel reveal-up">
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track" id="carousel-track">
+                        <!-- Card 1 -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                            </div>
+                            <p class="review-text">"Nf Construction delivered the complex concrete foundation for our
+                                high-rise project ahead of schedule. Their professionalism and attention to structural
+                                integrity is unmatched in the industry."</p>
+                            <div class="client-info">
+                                <img src="https://i.pravatar.cc/100?img=12" alt="James Sterling" class="client-avatar">
+                                <div class="client-details">
+                                    <h4 class="client-name">James Sterling</h4>
+                                    <span class="client-company">Director, Sterling Development</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                            </div>
+                            <p class="review-text">"We rely on Nf Construction for all our commercial framing. Their
+                                crews are incredibly efficient and their commitment to safety gives us absolute peace of
+                                mind on every project."</p>
+                            <div class="client-info">
+                                <img src="https://i.pravatar.cc/100?img=32" alt="Sarah Chen" class="client-avatar">
+                                <div class="client-details">
+                                    <h4 class="client-name">Sarah Chen</h4>
+                                    <span class="client-company">VP of Operations, Skyline Builders</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                            </div>
+                            <p class="review-text">"The team delivered exceptional quality and maintained complete
+                                transparency throughout the project. The construction was completed on time, and the
+                                finishing exceeded our workmanship standards."</p>
+                            <div class="client-info">
+                                <img src="https://i.pravatar.cc/100?img=57" alt="Michael Torres" class="client-avatar">
+                                <div class="client-details">
+                                    <h4 class="client-name">Michael Torres</h4>
+                                    <span class="client-company">Residential Client & Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                            </div>
+                            <p class="review-text">"From site preparation to final delivery, Nf Construction handled our
+                                warehouse project with remarkable precision. Their project management kept everything on
+                                track and under budget."</p>
+                            <div class="client-info">
+                                <img src="https://i.pravatar.cc/100?img=15" alt="David Ramirez" class="client-avatar">
+                                <div class="client-details">
+                                    <h4 class="client-name">David Ramirez</h4>
+                                    <span class="client-company">Owner, Ramirez Logistics</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                            </div>
+                            <p class="review-text">"Outstanding structural work on our multi-story commercial building.
+                                The concrete foundation they poured is rock solid and the framing was done with
+                                incredible accuracy and care."</p>
+                            <div class="client-info">
+                                <img src="https://i.pravatar.cc/100?img=25" alt="Angela Brooks" class="client-avatar">
+                                <div class="client-details">
+                                    <h4 class="client-name">Angela Brooks</h4>
+                                    <span class="client-company">CEO, Brooks Properties</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="testimonial-card">
+                            <div class="card-top">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                            </div>
+                            <p class="review-text">"We've used Nf Construction on three separate commercial projects.
+                                Every single time, they deliver top-tier craftsmanship and strong project management.
+                                Highly recommended for any contractor."</p>
+                            <div class="client-info">
+                                <img src="https://i.pravatar.cc/100?img=60" alt="Robert Kim" class="client-avatar">
+                                <div class="client-details">
+                                    <h4 class="client-name">Robert Kim</h4>
+                                    <span class="client-company">Project Manager, NexGen Developers</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="carousel-arrow carousel-prev" id="carousel-prev" aria-label="Previous">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="carousel-arrow carousel-next" id="carousel-next" aria-label="Next">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+                <!-- Dots -->
+                <div class="carousel-dots" id="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container cta-container reveal-up">
+            <h2 class="cta-title">Need Reliable Construction Experts?</h2>
+            <p class="cta-desc">Let's discuss your next commercial project. Get a comprehensive quote and timeline
+                today.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary btn-large"><span class="btn-icon"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor">
+                            <path
+                                d="M11.7478 0.251049C12.0825 0.58578 12.0825 1.1285 11.7478 1.46323L2.03354 11.1775C1.69881 11.5122 1.15609 11.5122 0.821361 11.1775C0.486629 10.8427 0.486629 10.3001 0.821361 9.96537L10.5357 0.251049C10.8704 -0.083683 11.413 -0.083683 11.7478 0.251049Z" />
+                            <path
+                                d="M0 0.857143C0 0.38376 0.38376 0 0.857143 0H11.1429C11.6162 0 12 0.38376 12 0.857143V11.1429C12 11.6162 11.6162 12 11.1429 12C10.6695 12 10.2857 11.6162 10.2857 11.1429V1.71429H0.857143C0.38376 1.71429 0 1.33053 0 0.857143Z" />
+                        </svg></span><span class="btn-text">Request A Quote</span><span class="btn-hover-bg"></span></a>
+                <a href="tel:+1234567890" class="btn btn-outline-light btn-large"><span class="btn-icon"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor">
+                            <path
+                                d="M11.7478 0.251049C12.0825 0.58578 12.0825 1.1285 11.7478 1.46323L2.03354 11.1775C1.69881 11.5122 1.15609 11.5122 0.821361 11.1775C0.486629 10.8427 0.486629 10.3001 0.821361 9.96537L10.5357 0.251049C10.8704 -0.083683 11.413 -0.083683 11.7478 0.251049Z" />
+                            <path
+                                d="M0 0.857143C0 0.38376 0.38376 0 0.857143 0H11.1429C11.6162 0 12 0.38376 12 0.857143V11.1429C12 11.6162 11.6162 12 11.1429 12C10.6695 12 10.2857 11.6162 10.2857 11.1429V1.71429H0.857143C0.38376 1.71429 0 1.33053 0 0.857143Z" />
+                        </svg></span><span class="btn-text">Contact Our Team</span><span
+                        class="btn-hover-bg"></span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container contact-container">
+            <div class="contact-info reveal-left">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something Great Together</h2>
+                <p class="contact-desc">Reach out to our team to schedule a consultation, request an estimate, or
+                    inquire about our commercial construction services.</p>
+
+                <div class="info-items">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Office Location</h4>
+                            <p>1234 Industrial Blvd, Suite 100<br>Construction City, ST 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>info@nfconstructionllc.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Fri: 7:00 AM - 6:00 PM<br>Sat - Sun: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper reveal-right">
+                <form class="contact-form">
+                    <h3>Send a Message</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Service Needed</option>
+                            <option value="concrete">Concrete Foundations</option>
+                            <option value="framing">Framing Services</option>
+                            <option value="commercial">Commercial Construction</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Project Details" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-text">Submit Request</span>
+                        <span class="btn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor">
+                                <path
+                                    d="M11.7478 0.251049C12.0825 0.58578 12.0825 1.1285 11.7478 1.46323L2.03354 11.1775C1.69881 11.5122 1.15609 11.5122 0.821361 11.1775C0.486629 10.8427 0.486629 10.3001 0.821361 9.96537L10.5357 0.251049C10.8704 -0.083683 11.413 -0.083683 11.7478 0.251049Z" />
+                                <path
+                                    d="M0 0.857143C0 0.38376 0.38376 0 0.857143 0H11.1429C11.6162 0 12 0.38376 12 0.857143V11.1429C12 11.6162 11.6162 12 11.1429 12C10.6695 12 10.2857 11.6162 10.2857 11.1429V1.71429H0.857143C0.38376 1.71429 0 1.33053 0 0.857143Z" />
+                            </svg>
+                        </span>
+                        <span class="btn-hover-bg"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Marquee -->
+    <div class="footer-marquee">
+        <div class="marquee-content">
+            <span>CONCRETE FOUNDATIONS <i class="fa-solid fa-star-of-life"></i></span>
+            <span>COMMERCIAL PROJECTS <i class="fa-solid fa-star-of-life"></i></span>
+            <span>STRUCTURAL FRAMING <i class="fa-solid fa-star-of-life"></i></span>
+            <span>BUILDING DESIGN <i class="fa-solid fa-star-of-life"></i></span>
+            <span>SITE PREPARATION <i class="fa-solid fa-star-of-life"></i></span>
+            <span>RENOVATION & REMODELING <i class="fa-solid fa-star-of-life"></i></span>
+            <!-- Repeat for seamless scroll -->
+            <span>CONCRETE FOUNDATIONS <i class="fa-solid fa-star-of-life"></i></span>
+            <span>COMMERCIAL PROJECTS <i class="fa-solid fa-star-of-life"></i></span>
+            <span>STRUCTURAL FRAMING <i class="fa-solid fa-star-of-life"></i></span>
+            <span>BUILDING DESIGN <i class="fa-solid fa-star-of-life"></i></span>
+            <span>SITE PREPARATION <i class="fa-solid fa-star-of-life"></i></span>
+            <span>RENOVATION & REMODELING <i class="fa-solid fa-star-of-life"></i></span>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <!-- Branding & Hours -->
+                <div class="footer-col branding-col">
+                    <a href="#" class="logo footer-logo">
+                        <img src="assets/images/Contruction-logo.png" alt="Nf Construction LLC" class="logo-img">
+                    </a>
+                    <div class="working-hours">
+                        <h4>Working Hours:</h4>
+                        <p>Monday – Friday : 09:00 AM – 06:00 PM</p>
+                        <p>Saturday – Sunday : Closed</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h4>Contact Information</h4>
+                    <p class="contact-address">123 Construction Way, Suite 100<br>New York, NY 10001</p>
+                </div>
+
+                <!-- Get In Touch -->
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-links">
+                        <p><i class="fa-solid fa-phone"></i> Phone: +1 234 567 890</p>
+                        <p><i class="fa-solid fa-envelope"></i> Email: info@nfconstruction.com</p>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h4>Newsletter Subscription</h4>
+                    <p>Stay updated on our latest projects, safety tips, and commercial offers.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Enter Email Address*" required>
+                        <button type="submit" class="newsletter-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <!-- Socials -->
+            <div class="footer-socials-section">
+                <h4>Follow On Socials:</h4>
+                <div class="social-pills">
+                    <a href="#" class="social-pill"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                    <a href="#" class="social-pill"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="#" class="social-pill"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href="#" class="social-pill"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div class="footer-bottom-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Service</a>
+                    <a href="#projects">Project</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="copyright">
+                    Copyright © 2026 Nf Construction LLC. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        new Swiper(".rf-projects-slider", {
+            loop: true,
+            speed: 800,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1025: { slidesPerView: 3 },
+                1440: { slidesPerView: 4 }
+            }
+        });
+    </script>
+</body>
+
+</html>

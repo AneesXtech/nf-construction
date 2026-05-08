@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Projects Slider Section</title>
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f5f5;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        .rf-projects-section {
+            padding: 110px 0;
+            overflow: hidden;
+        }
+
+        .rf-container {
+            width: 100%;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .rf-projects-header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 0 20px;
+        }
+
+        .rf-subtitle-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 18px;
+        }
+
+        .rf-star {
+            color: #ff6a00;
+            font-size: 20px;
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        .rf-subtitle {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        .rf-title {
+            font-size: 58px;
+            line-height: 1.1;
+            font-weight: 700;
+            color: #000;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* =========================
+           SLIDER
+        ========================= */
+
+        .rf-projects-slider {
+            padding: 0 8%;
+        }
+
+        .swiper-slide {
+            height: auto;
+        }
+
+        .rf-project-card {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            height: 520px;
+            cursor: pointer;
+        }
+
+        .rf-project-image {
+            width: 100%;
+            height: 100%;
+        }
+
+        .rf-project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.6s ease;
+        }
+
+        .rf-project-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .rf-project-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, .82), rgba(0, 0, 0, .05) 60%);
+            z-index: 1;
+        }
+
+        .rf-project-content {
+            position: absolute;
+            left: 22px;
+            right: 22px;
+            bottom: 22px;
+            z-index: 2;
+        }
+
+        .rf-project-content h3 {
+            font-size: 22px;
+            line-height: 1.4;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* =========================
+           PAGINATION
+        ========================= */
+
+        .swiper-pagination {
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 9px;
+            height: 9px;
+            background: #d4d4d4;
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 28px;
+            border-radius: 20px;
+            background: #ff6a00;
+        }
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .rf-bottom-cta {
+            margin-top: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            padding: 0 20px;
+        }
+
+        .rf-author {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .rf-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .rf-phone-icon {
+            width: 30px;
+            height: 30px;
+            background: #ff6a00;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            position: absolute;
+            right: -10px;
+            bottom: -2px;
+            border: 3px solid #f5f5f5;
+        }
+
+        .rf-bottom-cta p {
+            font-size: 17px;
+            color: #000;
+        }
+
+        .rf-bottom-cta a {
+            color: #ff6a00;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media(max-width:1400px) {
+
+            .rf-title {
+                font-size: 50px;
+            }
+
+        }
+
+        @media(max-width:1024px) {
+
+            .rf-projects-slider {
+                padding: 0 40px;
+            }
+
+            .rf-title {
+                font-size: 42px;
+            }
+
+            .rf-project-card {
+                height: 480px;
+            }
+
+        }
+
+        @media(max-width:767px) {
+
+            .rf-projects-section {
+                padding: 80px 0;
+            }
+
+            .rf-projects-slider {
+                padding: 0 20px;
+            }
+
+            .rf-title {
+                font-size: 34px;
+            }
+
+            .rf-project-card {
+                height: 420px;
+            }
+
+            .rf-project-content h3 {
+                font-size: 18px;
+            }
+
+            .rf-bottom-cta {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .rf-bottom-cta p {
+                font-size: 15px;
+                line-height: 1.6;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =========================
+         PROJECT SECTION
+    ========================= -->
+
+    <section class="rf-projects-section">
+
+        <div class="rf-container">
+
+            <!-- HEADER -->
+            <div class="rf-projects-header">
+
+                <div class="rf-subtitle-wrap">
+                    <span class="rf-star">*</span>
+                    <span class="rf-subtitle">OUR PROJECTS</span>
+                </div>
+
+                <h2 class="rf-title">
+                    Showcasing renovations that reflect quality and craftsmanship
+                </h2>
+
+            </div>
+
+            <!-- SLIDER -->
+            <div class="swiper rf-projects-slider">
+
+                <div class="swiper-wrapper">
+
+                    <!-- CARD -->
+                    <div class="swiper-slide">
+                        <div class="rf-project-card">
+
+                            <div class="rf-project-image">
+                                <img src="https://demo.awaikenthemes.com/renofix/wp-content/uploads/2025/12/project-6.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="rf-project-overlay"></div>
+
+                            <div class="rf-project-content">
+                                <h3>
+                                    Elegant Living and Dining Remodel Interior Upgrade
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="swiper-slide">
+                        <div class="rf-project-card">
+
+                            <div class="rf-project-image">
+                                <img src="https://demo.awaikenthemes.com/renofix/wp-content/uploads/2025/12/project-7.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="rf-project-overlay"></div>
+
+                            <div class="rf-project-content">
+                                <h3>
+                                    Rustic Inspire Home Interior Remodel Design Upgrade
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="swiper-slide">
+                        <div class="rf-project-card">
+
+                            <div class="rf-project-image">
+                                <img src="https://demo.awaikenthemes.com/renofix/wp-content/uploads/2025/12/project-8.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="rf-project-overlay"></div>
+
+                            <div class="rf-project-content">
+                                <h3>
+                                    Open Living Roof Space Renovation Expert Services
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="swiper-slide">
+                        <div class="rf-project-card">
+
+                            <div class="rf-project-image">
+                                <img src="https://demo.awaikenthemes.com/renofix/wp-content/uploads/2025/12/project-1.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="rf-project-overlay"></div>
+
+                            <div class="rf-project-content">
+                                <h3>
+                                    Full-Scale Modern Home Transformation
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="swiper-slide">
+                        <div class="rf-project-card">
+
+                            <div class="rf-project-image">
+                                <img src="https://demo.awaikenthemes.com/renofix/wp-content/uploads/2025/12/project-2.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="rf-project-overlay"></div>
+
+                            <div class="rf-project-content">
+                                <h3>
+                                    Contemporary Apartment Full Interior Make
+                                </h3>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- PAGINATION -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="rf-bottom-cta">
+
+                <div class="rf-author">
+
+                    <img src="https://demo.awaikenthemes.com/renofix/wp-content/uploads/2025/12/author-1.jpg" alt="">
+
+                    <div class="rf-phone-icon">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M18.9657 14.8671C18.4744 14.3555 17.8818 14.082 17.2537 14.082C16.6306 14.082 16.0329 14.3505 15.5213 14.8621L13.9206 16.4576C13.7889 16.3867 13.6572 16.3209 13.5306 16.255C13.3483 16.1639 13.176 16.0777 13.0291 15.9866C11.5298 15.0343 10.1672 13.7933 8.86033 12.1875C8.22716 11.3872 7.80167 10.7135 7.49268 10.0297C7.90804 9.64979 8.29301 9.25469 8.66785 8.87479C8.80968 8.73296 8.95151 8.58607 9.09334 8.44424C10.1571 7.38051 10.1571 6.00273 9.09334 4.939L7.71049 3.55616C7.55347 3.39913 7.39138 3.23704 7.23941 3.07495C6.93549 2.7609 6.61637 2.43671 6.28713 2.13279C5.79579 1.64652 5.2082 1.38818 4.59023 1.38818C3.97226 1.38818 3.37454 1.64652 2.86801 2.13279L1.13565 3.88034C0.487286 4.52871 0.117514 5.31891 0.0364682 6.23574C-0.0851005 7.71482 0.350521 9.0926 0.684835 9.99424C1.50542 12.2078 2.73124 14.2593 4.55984 16.4576C6.77847 19.1068 9.44791 21.1988 12.4973 22.6728C13.6623 23.225 15.2174 23.8784 16.9548 23.9898Z" />
+                        </svg>
+
+                    </div>
+
+                </div>
+
+                <p>
+                    Let’s make something great work together.
+                    <a href="#">Get Free Quote</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+        new Swiper(".rf-projects-slider", {
+
+            loop: true,
+
+            speed: 2000,
+
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+
+            spaceBetween: 30,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+
+                320: {
+                    slidesPerView: 1,
+                },
+
+                768: {
+                    slidesPerView: 2,
+                },
+
+                1025: {
+                    slidesPerView: 3,
+                },
+
+                1440: {
+                    slidesPerView: 4,
+                }
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
