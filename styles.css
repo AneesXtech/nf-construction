@@ -27,8 +27,12 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -36,7 +40,6 @@ body {
     color: var(--gray-dark);
     line-height: 1.6;
     background-color: var(--white);
-    overflow-x: hidden;
 }
 
 h1,
@@ -2219,7 +2222,11 @@ img {
 /* Mobile Phones (480px and down) */
 @media (max-width: 480px) {
     .container {
-        padding: 0 1.25rem;
+        padding: 0 1rem;
+    }
+    
+    .mobile-sidebar {
+        max-width: 85%;
     }
 
     .hero-title {
@@ -2374,13 +2381,14 @@ img {
 .mobile-sidebar {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     width: 100%;
     max-width: 350px;
-    height: 100vh;
+    height: 100%;
     background-color: var(--white);
     z-index: 2000;
-    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -2388,7 +2396,7 @@ img {
 }
 
 .mobile-sidebar.active {
-    right: 0;
+    transform: translateX(0);
 }
 
 .sidebar-header {
@@ -2417,11 +2425,13 @@ img {
 
 .sidebar-nav ul li a {
     font-family: var(--font-heading);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--black);
     text-decoration: none;
     transition: color 0.3s ease;
+    display: block;
+    padding: 10px 0;
 }
 
 .sidebar-nav ul li a:hover {
